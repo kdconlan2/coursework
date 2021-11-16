@@ -1,0 +1,45 @@
+*{
+    
+    box-sizing: border-box; 
+
+
+}
+
+
+
+.cell{
+    display: flex;
+    /* height: 120px; */
+    flex: 0 0 120px; 
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.board{
+   
+    height: 360px;
+    width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.cell:nth-child(3n+2){
+    border-left: solid 3px black;
+    border-right: solid 3px black;
+}
+
+.cell:nth-child(n+4):nth-child(-n+6){
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
+}
+
+body{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center; 
+}
+
